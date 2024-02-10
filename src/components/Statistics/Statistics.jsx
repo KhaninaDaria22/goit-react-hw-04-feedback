@@ -1,7 +1,5 @@
 import {StatisticsList, StatisticItem, StatisticText} from './Statistics.styled'
 
-
-
 const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
         return (
             <StatisticsList> 
