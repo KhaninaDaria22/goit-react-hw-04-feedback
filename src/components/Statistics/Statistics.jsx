@@ -1,11 +1,8 @@
-import { Component } from "react";
 import {StatisticsList, StatisticItem, StatisticText} from './Statistics.styled'
 
 
 
-class Statistics extends Component {
-    render() {
-        const { good, neutral, bad, total, positivePercentage} =  this.props;
+const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
         return (
             <StatisticsList> 
                 <StatisticItem>
@@ -31,6 +28,5 @@ class Statistics extends Component {
             </StatisticsList>           
         )
     }
-}
 
 export default Statistics;
